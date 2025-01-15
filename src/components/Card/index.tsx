@@ -1,12 +1,13 @@
 import { Section } from "./styles";
+
 export interface ICard {
   autor: string
   titulo: string
   tipo: string
   lancamento: string
-  imagem: HTMLImageElement
+  img: string
 }
-export const Card = ({ autor, titulo, tipo, lancamento, imagem }: ICard) => {
+export const Card = ({ autor, titulo, tipo, lancamento, img }: ICard) => {
   return (
     <Section>
       <aside>
@@ -25,8 +26,8 @@ export const Card = ({ autor, titulo, tipo, lancamento, imagem }: ICard) => {
         <h5>Lançamento:</h5>
         <p>{lancamento}</p>
       </aside>
-      <aside>
-        <img>{imagem}</img>
+            <aside>
+        <img src={img} alt="a" />
       </aside>
     </Section>
   );

@@ -2,6 +2,7 @@ import * as S from './styles'
 import { dados } from "../../services/dados"
 import { ComponentCard } from '../../components'
 
+
 export function Comentario() {
   return (
     <S.Section>
@@ -12,7 +13,7 @@ export function Comentario() {
           titulo={item.titulo}
           tipo={item.tipo}
           lancamento={item.lancamento}
-          imagem={item.imagem}
+          img={item.img}
         />
       ))}
     </S.Section>
